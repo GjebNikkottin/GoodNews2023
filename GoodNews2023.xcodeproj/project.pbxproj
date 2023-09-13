@@ -13,6 +13,8 @@
 		F7883DC52A9C782100452640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7883DC32A9C782100452640 /* Main.storyboard */; };
 		F7883DC72A9C782400452640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7883DC62A9C782400452640 /* Assets.xcassets */; };
 		F7883DCA2A9C782400452640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7883DC82A9C782400452640 /* LaunchScreen.storyboard */; };
+		F7883DD22A9C79B400452640 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7883DD12A9C79B400452640 /* APICaller.swift */; };
+		F7883DD42A9F83C800452640 /* GoodNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7883DD32A9F83C800452640 /* GoodNewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		F7883DC62A9C782400452640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7883DC92A9C782400452640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7883DCB2A9C782400452640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7883DD12A9C79B400452640 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		F7883DD32A9F83C800452640 /* GoodNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodNewsTableViewCell.swift; sourceTree = "<group>"; };
+		F7B710AC2AB18E0E00E05373 /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,9 @@
 				F7883DC62A9C782400452640 /* Assets.xcassets */,
 				F7883DC82A9C782400452640 /* LaunchScreen.storyboard */,
 				F7883DCB2A9C782400452640 /* Info.plist */,
+				F7883DD12A9C79B400452640 /* APICaller.swift */,
+				F7883DD32A9F83C800452640 /* GoodNewsTableViewCell.swift */,
+				F7B710AC2AB18E0E00E05373 /* .gitignore.md */,
 			);
 			path = GoodNews2023;
 			sourceTree = "<group>";
@@ -140,7 +148,9 @@
 			files = (
 				F7883DC22A9C782100452640 /* ViewController.swift in Sources */,
 				F7883DBE2A9C782100452640 /* AppDelegate.swift in Sources */,
+				F7883DD42A9F83C800452640 /* GoodNewsTableViewCell.swift in Sources */,
 				F7883DC02A9C782100452640 /* SceneDelegate.swift in Sources */,
+				F7883DD22A9C79B400452640 /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,11 +300,12 @@
 				DEVELOPMENT_TEAM = ZPS57W99YD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoodNews2023/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Good News";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +313,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Gleb-Nikitin.GoodNews2023";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,11 +332,12 @@
 				DEVELOPMENT_TEAM = ZPS57W99YD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoodNews2023/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Good News";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +345,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Gleb-Nikitin.GoodNews2023";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
